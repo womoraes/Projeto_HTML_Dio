@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template - Utilizar como modelo</title>
+    <link rel="stylesheet" href="base.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Aqui vai o seu menu -->
+            <ul>
+                <li><a href="./principal.html"><font face="Arial"><b>Principal</b></font></a></li><br>
+                <li><a href="./sobre.html"><font face="Arial"><b>Sobre a Clínica</b></font></a></li><br>
+                <li><a href="./horario.html"><font face="Arial"><b>Horário de Atendimento</b></font></a></li><br>
+                <li><a href="./contato.html"><font face="Arial"><b>Contato</b></font></a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <!-- Aqui vai o seu header -->
+                <img src="./Contato telefonico.jpg" height="150px" width="985px">
+            </div>
+    
+            <div class="content">
+            <!-- Aqui vai o seu conteúdo -->
+            <h1>
+                <p align="center"><font color="red" face="Arial"><b>Contato</b></font></p>
+            </h1>
+            <form name="attendance" onsubmit="alert('Enviei o formulário');" autocomplete="off" target="_blank" method="post" action="https://meusite.com.br/attendance">
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+                    <label>Nome</label><input type="text" name="name"><br>
+                    <label>E-mail</label><input type="email" name="Email"><br>
+                </fieldset><br>
+                <fieldset>
+                    <legend>Seleções</legend>
+                    <label>Assunto</label>
+                        <select name="role">
+                            <option value="">Selecione a opção</option>
+                            <option value="sugestao">Sugestão</option>
+                            <option value="elogio">Elogio</option>
+                            <option value="reclamacao">Reclamação</option>
+                        </select><br>
+                    <label>Cliente:</label><input type="radio" name="cliente" value="sim">Sim</label><input type="radio" name="cliente" value="nao">Não<br>
+                </fieldset><br>
+                <fieldset>
+                    <legend>Envio</legend>
+                    <label>Mensagem:</label>
+                    <textarea name="message"></textarea><br>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </fieldset><br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7472.44373086542!2d-47.4032341142688!3d-20.53810123001272!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b0a61af61f6833%3A0xf8937fe5d4b0f6dd!2sFranca%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1671707473678!5m2!1spt-BR!2sbr" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>">
+            </form>
+            </div>
+    
+            <div class="footer">
+                <!-- Aqui vai o seu rodapé -->
+                <h2>
+                    <p align="center">Vetcell - Clínica Veterinária Especializada</p>
+                </h2>
+                <h4>
+                    <p align="center">Rua Irmãos Antunes, 1.250 - Franca/SP</p>
+                    <p align="center">Whatsapp: (16) 99899-9988</p>
+                    <p align="center">Telef.: (16) 3722-2222</p>
+                </h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
